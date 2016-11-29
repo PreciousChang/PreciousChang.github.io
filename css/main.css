@@ -1682,7 +1682,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ec1ce3;
+  background: #c8ff9e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2821,9 +2821,6 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-.post-body {
-  background: url("/images/48.jpg");
 }
 @media (max-width: 767px) {
   .post-body {
