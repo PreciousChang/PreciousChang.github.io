@@ -1682,7 +1682,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a12628;
+  background: #18a1ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2441,7 +2441,7 @@ a.search-result {
   overflow: hidden;
 }
 body {
-  background: url("/images/46.jpg");
+  background: url("/images/48.jpg");
 }
 @media (min-width: 992px) {
   .full-image.full-image.full-image {
@@ -2471,7 +2471,7 @@ body {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: #fff;
+  background: #000;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -2526,7 +2526,7 @@ body {
   box-sizing: border-box;
   padding: 40px;
   width: 700px;
-  background: #fff;
+  background: #000;
   min-height: 700px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2602,8 +2602,8 @@ body {
 }
 .site-meta {
   padding: 20px 0;
-  color: #fff;
-  background: #222;
+  color: #00f;
+  background: #0684bd;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2621,7 +2621,7 @@ body {
   background: none;
 }
 .brand:hover {
-  color: #fff;
+  color: #00f;
 }
 .site-subtitle {
   margin: 0;
@@ -2702,7 +2702,7 @@ body {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background: #fff;
+  background: black-deep;
 }
 .sidebar-inner.affix {
   position: fixed;
@@ -2822,8 +2822,17 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.post-body {
+  background: url("/images/48.jpg");
+}
 @media (max-width: 767px) {
   .post-body {
     text-align: justify;
   }
+}
+body {
+  background-image: url("/images/48.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
