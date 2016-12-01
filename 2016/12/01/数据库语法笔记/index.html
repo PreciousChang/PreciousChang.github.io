@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="title:数据库语法笔记–2016.10.11–必须掌握创建表结构的sql语句
-–了解以下语句–显示表结构exec sp_help class–修改表结构–(1)添加列alter table testadd c char(10) null,d int null–(2)删除列alter table testdrop column d–(3)修改表结构alter table testalter c">
+<meta name="description" content="–2016.10.11–必须掌握创建表结构的sql语句
+–了解以下语句–显示表结构exec sp_help class–修改表结构–(1)添加列alter table testadd c char(10) null,d int null–(2)删除列alter table testdrop column d–(3)修改表结构alter table testalter column c nchar(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="This is it.">
+<meta property="og:title" content="数据库语法笔记">
 <meta property="og:url" content="http://yoursite.com/2016/12/01/数据库语法笔记/index.html">
 <meta property="og:site_name" content="This is it.">
-<meta property="og:description" content="title:数据库语法笔记–2016.10.11–必须掌握创建表结构的sql语句
-–了解以下语句–显示表结构exec sp_help class–修改表结构–(1)添加列alter table testadd c char(10) null,d int null–(2)删除列alter table testdrop column d–(3)修改表结构alter table testalter c">
-<meta property="og:updated_time" content="2016-12-01T14:51:54.969Z">
+<meta property="og:description" content="–2016.10.11–必须掌握创建表结构的sql语句
+–了解以下语句–显示表结构exec sp_help class–修改表结构–(1)添加列alter table testadd c char(10) null,d int null–(2)删除列alter table testdrop column d–(3)修改表结构alter table testalter column c nchar(">
+<meta property="og:updated_time" content="2016-12-01T14:58:59.038Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="This is it.">
-<meta name="twitter:description" content="title:数据库语法笔记–2016.10.11–必须掌握创建表结构的sql语句
-–了解以下语句–显示表结构exec sp_help class–修改表结构–(1)添加列alter table testadd c char(10) null,d int null–(2)删除列alter table testdrop column d–(3)修改表结构alter table testalter c">
+<meta name="twitter:title" content="数据库语法笔记">
+<meta name="twitter:description" content="–2016.10.11–必须掌握创建表结构的sql语句
+–了解以下语句–显示表结构exec sp_help class–修改表结构–(1)添加列alter table testadd c char(10) null,d int null–(2)删除列alter table testdrop column d–(3)修改表结构alter table testalter column c nchar(">
 
 
 
@@ -130,7 +130,7 @@
 
 
 
-  <title>  | This is it. </title>
+  <title> 数据库语法笔记 | This is it. </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -285,7 +285,7 @@
             
             
               
-                
+                数据库语法笔记
               
             
           </h1>
@@ -341,8 +341,7 @@
       
 
       
-        <hr>
-<h2 id="title-数据库语法笔记"><a href="#title-数据库语法笔记" class="headerlink" title="title:数据库语法笔记"></a>title:数据库语法笔记</h2><p>–2016.10.11<br>–必须掌握创建表结构的sql语句</p>
+        <p>–2016.10.11<br>–必须掌握创建表结构的sql语句</p>
 <p>–了解以下语句<br>–显示表结构<br>exec sp_help class<br>–修改表结构<br>–(1)添加列<br>alter table test<br>add c char(10) null,d int null<br>–(2)删除列<br>alter table test<br>drop column d<br>–(3)修改表结构<br>alter table test<br>alter column c nchar(10) not null<br>–(4)重命名列<br>exec sp_rename ‘test’ ,’test1’–修改表名<br>exec sp_rename ‘test1.c’,’cc’,’column’<br>–删除表<br>drop table test<br>–创建本地临时表<br>create table #test<br>(a int not null,<br>b char(10)<br>)</p>
 <p>–创建主键<br>–(1)在创建表的同时设置主键<br>create table test<br>(<br>a int not null primary key,<br>b char(10)<br>)</p>
 <p>create table test1<br>(<br>a int not null,<br>b char(10)<br>constraint pk_a primary key (a)<br>)<br>–(2)创建表之后再设置主键<br>alter table department<br>add constraint pk_department primary key(dno)</p>
@@ -499,17 +498,8 @@ where b like &apos;[a,c]%&apos;
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://p0.so.qhmsg.com/bdr/326__/t0103e74ac5d695aa5a.jpg"
@@ -555,22 +545,6 @@ where b like &apos;[a,c]%&apos;
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-数据库语法笔记"><span class="nav-number">1.</span> <span class="nav-text">title:数据库语法笔记</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>
@@ -698,7 +672,7 @@ where b like &apos;[a,c]%&apos;
       var disqus_shortname = 'http://preciouschang.duoshuo.com';
       var disqus_identifier = '2016/12/01/数据库语法笔记/';
 
-      var disqus_title = "";
+      var disqus_title = "数据库语法笔记";
 
 
       function run_disqus_script(disqus_script) {
