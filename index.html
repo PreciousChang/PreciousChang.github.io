@@ -404,15 +404,6 @@ where b like &apos;[a,c]%&apos;
 <p>select cno 课程代码,count(sno) 人数,avg(score) 平均成绩<br>from sc<br>group  by cno<br>having count(sno)&gt;=40<br>–11.15<br>–练习试题（产品管理）1</p>
 <p>–11.17<br>–讲解试题及多表查询<br>create table factory<br>(<br>factNo char(4) primary key,<br>factName nvarchar(10) not null,<br>factAddr nvarchar(50)        –3分<br>)<br>create table product<br>(<br>prodNo char(4) primary key,<br>prodName nvarchar(10) not null,<br>spec nvarchar(10)             –3分<br>)<br>create table produce<br>(<br>factNo char(4) not null,<br>prodNo char(4) primary key(factNo,prodNo),<br>num int not null                  –3分<br>)<br>–一个列在A表中作为主键，在B表中有相同的列名（也可以有不同的名字）作为一般键，那么在B表中的这个列就可以作为外键列。<br>insert into worker<br>select ‘110111’,’王明’,’工程师’,’G001’,    5,5000<br>union select ‘110112’,’唐小辉’,’助工’,’G002’,5,3500<br>–或者用下面的方法添加<br>insert into worker<br>values(‘110111’,’王明’,’工程师’,’G001’,    5,5000)<br>insert into worker<br>values(‘110112’,’唐小辉’,’助工’,’G002’,5,3500)</p>
 <p>–现要求用T-SQL语句查询工厂名为“城东厂”的生产的产品信息（产品号，产品名，规格，厂名）<br>select dbo.product.prodNo,prodName,spec,factName<br>from dbo.product inner join dbo.produce<br>on dbo.produce.prodNo=dbo.product.prodNo<br>inner join dbo.factory<br>on dbo.factory.factNo=dbo.produce.factNo<br>where factName=’城西厂’<br>–联接查询<br>–电信学院班级的信息<br>–找出表之间存在关联<br>select class.*<br>from class inner join department<br>on class.dno=department.dno and department.dname=’电信学院’<br>–外联接</p>
-<ol>
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<ul>
-<li></li>
-<li></li>
-</ul>
 
           
         
